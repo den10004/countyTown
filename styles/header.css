@@ -21,6 +21,12 @@
   }
 }
 
+@media screen and (max-width: 425px) {
+  .header__main-wrap {
+    height: 834px;
+  }
+}
+
 @media screen and (max-width: 380px) {
   .header__main-wrap {
     position: static;
@@ -195,6 +201,12 @@
   }
 }
 
+@media screen and (max-width: 425px) {
+  .wrap {
+    height: 833px;
+  }
+}
+
 @media screen and (max-width: 380px) {
   .wrap {
     height: 0;
@@ -227,14 +239,21 @@
   }
 }
 
+@media screen and (max-width: 425px) {
+  .king {
+    right: 100px;
+    height: 133px;
+    width: 47px;
+    right: 300px;
+    bottom: 90px;
+  }
+}
+
 @media screen and (max-width: 375px) {
   .king {
-    background-size: 100%;
-    width: 47px;
-    height: 116px;
     right: 260px;
     top: auto;
-    bottom: 100px;
+    bottom: 90px;
   }
 }
 
@@ -259,6 +278,15 @@
     background-size: 100%;
     top: auto;
     bottom: 180px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .queen {
+    right: 100px;
+    width: 47px;
+    height: 133px;
+    bottom: 150px;
   }
 }
 
@@ -310,7 +338,7 @@
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   .circle {
     top: 400px;
   }
@@ -334,7 +362,6 @@
 }
 @media screen and (max-width: 700px) {
   .city {
-    right: -120px;
     background: url("../images/city-min.webp");
     width: 744px;
     right: 0px;
@@ -342,13 +369,21 @@
   }
 }
 
+@media screen and (max-width: 425px) {
+  .city {
+    background: url("../images/city-425.webp") no-repeat;
+    width: 425px;
+    height: 283px;
+  }
+}
+
 @media screen and (max-width: 375px) {
   .city {
-    right: 0;
+    right: 0px;
     background: url("../images/city-min1.webp") no-repeat;
     width: 375px;
     right: 0px;
-    top: 530px;
+    top: 526px;
     height: 250px;
   }
 }
@@ -386,10 +421,14 @@
   }
 }
 
+@media screen and (max-width: 425px) {
+  .horse {
+    width: 100px;
+  }
+}
+
 @media screen and (max-width: 375px) {
   .horse {
     right: 130px;
-    width: 100px;
-    bottom: 10px;
   }
 }

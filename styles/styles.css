@@ -67,7 +67,7 @@ button {
 }
 
 @media screen and (max-width: 374px) {
-  .headline-h2 {
+  .headline {
     font-size: 30px;
     line-height: 32px;
   }
