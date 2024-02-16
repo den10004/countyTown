@@ -11,11 +11,20 @@
   margin-right: auto;
   left: 0;
   right: 0;
+  height: 700px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 700px) {
+  .header__main-wrap {
+    height: 990px;
+  }
 }
 
 @media screen and (max-width: 380px) {
   .header__main-wrap {
     position: static;
+    height: 775px;
   }
   .header__main > a > svg {
     width: 213px;
@@ -36,6 +45,9 @@
 
 .header__main {
   max-width: 542px;
+  position: absolute;
+  z-index: 6;
+  padding-right: 20px;
 }
 
 .header__main > a {
@@ -154,93 +166,230 @@
   margin: 0 auto;
 }
 
-.header-img {
-  background: url(../images/main.webp) center no-repeat;
+.header__background {
   height: 700px;
+  position: relative;
 }
 
-@media screen and (max-width: 1280px) {
-  .header-img {
-    background-position: calc(100% + 150px);
+@media screen and (max-width: 700px) {
+  .header__background {
+    height: 900px;
   }
 }
 
-@media screen and (max-width: 768px) {
-  .header-img {
-    background: url(../images/main-mid.webp) center no-repeat;
-    height: 774px;
-    background-position: left;
+@media screen and (max-width: 375px) {
+  .header__background {
+    height: 0;
   }
 }
 
-@media screen and (max-width: 523px) {
-  .header-img {
-    padding-top: 300px;
-    height: 470px;
+.wrap {
+  width: 100%;
+  height: 700px;
+  position: relative;
+}
+
+@media screen and (max-width: 700px) {
+  .wrap {
+    height: 990px;
   }
 }
 
 @media screen and (max-width: 380px) {
-  .header-img {
-    background: url(../images/main-min.webp) center no-repeat;
-    height: 383px;
-    padding-top: 0;
+  .wrap {
+    height: 0;
   }
 }
 
-.pawn {
+.king {
   position: absolute;
-  bottom: 20px;
-  right: 240px;
-  width: 82px;
-}
-
-.horse {
-  position: absolute;
-  bottom: 0px;
-  right: 530px;
-  width: 153px;
-}
-
-@media screen and (max-width: 1600px) {
-  .pawn {
-    position: absolute;
-    right: 140px;
-  }
-
-  .horse {
-    position: absolute;
-    right: 410px;
-  }
+  width: 133px;
+  height: 256px;
+  top: 270px;
+  right: 630px;
+  background: url("../images/king.png") no-repeat;
 }
 
 @media screen and (max-width: 1366px) {
-  .pawn {
-    position: absolute;
-    right: 40px;
-  }
-
-  .horse {
-    position: absolute;
-    right: 330px;
-    width: 153px;
+  .king {
+    right: 500px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 700px) {
+  .king {
+    background-size: 100%;
+    width: 133px;
+    height: 256px;
+    right: 500px;
+    top: auto;
+    bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .king {
+    background-size: 100%;
+    width: 47px;
+    height: 116px;
+    right: 260px;
+    top: auto;
+    bottom: 100px;
+  }
+}
+
+.queen {
+  position: absolute;
+  width: 146px;
+  height: 266px;
+  top: 170px;
+  right: 285px;
+  background: url("../images/chess.png") no-repeat;
+}
+
+@media screen and (max-width: 1366px) {
+  .queen {
+    top: 160px;
+    right: 160px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .queen {
+    background-size: 100%;
+    top: auto;
+    bottom: 180px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .queen {
+    background-size: 100%;
+    width: 47px;
+    right: 100px;
+    height: 133px;
+    top: auto;
+    bottom: 140px;
+    transform: rotate(14deg);
+  }
+}
+
+.circle {
+  position: absolute;
+  width: 660px;
+  height: 616px;
+  top: -10px;
+  right: 160px;
+  background-image: url("../images/circle.webp");
+}
+
+@media screen and (max-width: 1366px) {
+  .circle {
+    right: 30px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .circle {
+    top: 150px;
+    width: 302px;
+    height: 306px;
+    background-image: url("../images/circle-min.webp");
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 420px;
+  }
+}
+
+@media screen and (max-width: 543px) {
+  .circle {
+    top: 450px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .circle {
+    top: 400px;
+  }
+}
+
+.city {
+  position: absolute;
+  width: 1605px;
+  height: 441px;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  background: url("../images/city.webp");
+  background-position: 100% 0%;
+}
+
+@media screen and (max-width: 1366px) {
+  .city {
+    right: -120px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .city {
+    right: -120px;
+    background: url("../images/city-min.webp");
+    width: 744px;
+    right: 0px;
+    top: 550px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .city {
+    right: 0;
+    background: url("../images/city-min1.webp") no-repeat;
+    width: 375px;
+    right: 0px;
+    top: 530px;
+    height: 250px;
+  }
+}
+
+.city > img {
+  position: absolute;
+}
+
+.pawn {
+  bottom: 20px;
+  right: 170px;
+}
+
+@media screen and (max-width: 700px) {
   .pawn {
     display: none;
   }
+}
+
+.horse {
+  bottom: 0;
+  right: 460px;
+  width: 197px;
+}
+
+@media screen and (max-width: 700px) {
   .horse {
-    position: absolute;
-    right: 250px;
+    right: 260px;
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 500px) {
   .horse {
-    position: absolute;
-    right: 150px;
-    width: 76px;
+    right: 180px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .horse {
+    right: 130px;
+    width: 100px;
+    bottom: 10px;
   }
 }

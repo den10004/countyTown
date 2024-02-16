@@ -51,7 +51,7 @@
 
 @media screen and (max-width: 425px) {
   .stage {
-    margin-top: 115px;
+    margin-top: 125px;
   }
 }
 
@@ -83,6 +83,12 @@
     top: 190px;
     left: 10px;
     transform: rotate(356deg);
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .stage > img {
+    width: 260px;
   }
 }
 
@@ -129,6 +135,13 @@
   text-transform: none;
   bottom: 0;
   left: 0;
+}
+
+@media screen and (max-width: 425px) {
+  .stage__headline > p {
+    font-size: 18px;
+    line-height: 21.6px;
+  }
 }
 
 .stage__headline {

@@ -59,8 +59,15 @@ button {
   }
 }
 
-@media screen and (max-width: 379px) {
+@media screen and (max-width: 375px) {
   .headline {
+    font-size: 36px;
+    line-height: 39px;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .headline-h2 {
     font-size: 30px;
     line-height: 32px;
   }
@@ -84,7 +91,14 @@ button {
 
 @media screen and (max-width: 375px) {
   .headline-h2 {
-    font-size: 25px;
+    font-size: 28px;
+    line-height: 37px;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .headline-h2 {
+    font-size: 24px;
     line-height: 28px;
   }
 }
@@ -165,6 +179,13 @@ button {
   line-height: 24px;
   color: #3057a2;
   text-decoration: none;
+}
+
+@media screen and (max-width: 425px) {
+  .link > a {
+    font-size: 18px;
+    line-height: 21.6px;
+  }
 }
 
 .swiper {

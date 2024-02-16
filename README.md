@@ -1,3 +1,3 @@
-# countyTown
+# countyTown Вёрстка
 
-https://github.com/den10004/countyTown.git
+## [Ссылка на проект](https://den10004.github.io/countyTown/).
