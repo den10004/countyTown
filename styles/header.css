@@ -1,0 +1,246 @@
+.header-wr {
+  width: 100%;
+  background: #e9ded4 url(../images/background.jpg);
+  position: relative;
+}
+
+.header__main-wrap {
+  max-width: 1620px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 380px) {
+  .header__main-wrap {
+    position: static;
+  }
+  .header__main > a > svg {
+    width: 213px;
+  }
+}
+
+.header {
+  max-width: 1220px;
+  padding: 25px 20px 0 20px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 380px) {
+  .header {
+    padding: 15px 20px 0 20px;
+  }
+}
+
+.header__main {
+  max-width: 542px;
+}
+
+.header__main > a {
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+.header__main > h2 {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 66px;
+  color: #313131;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+  .header__main > h2 {
+    font-size: 45px;
+    line-height: 45px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .header__main > h2 {
+    font-size: 36px;
+    line-height: 39px;
+    margin-top: 0px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header__main > h2 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+.first-h2 {
+  margin-top: 55px;
+}
+
+@media screen and (max-width: 425px) {
+  .first-h2 {
+    margin-top: 35px !important;
+  }
+}
+
+.header__main > p {
+  font-family: "Golos Text", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 27px;
+  color: #313131;
+
+  text-align: center;
+}
+
+.header__buton-block {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .header__buton-block {
+    flex-direction: column;
+  }
+  .header__buton-block > button:first-child {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .header__buton-block {
+    margin-top: 30px;
+  }
+}
+
+.btn-black {
+  background-color: #1f1f1f;
+  color: #ffffff;
+  border: none;
+  transition: 0s background-color color;
+  transition-delay: 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+  .brnone > br {
+    display: none;
+  }
+}
+
+.btn-black:hover {
+  color: #1f1f1f;
+  background-color: #fbce51;
+}
+
+.btn-transparent {
+  background-color: transparent;
+  color: #1f1f1f;
+  border: 2px solid #1f1f1f;
+  transition: 0s background-color color;
+  transition-delay: 0.3s;
+}
+
+.btn-transparent:hover {
+  color: #ffffff;
+  background-color: #1f1f1f;
+}
+
+.header__wrap {
+  max-width: 1620px;
+  margin: 0 auto;
+}
+
+.header-img {
+  background: url(../images/main.webp) center no-repeat;
+  height: 700px;
+}
+
+@media screen and (max-width: 1280px) {
+  .header-img {
+    background-position: calc(100% + 150px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-img {
+    background: url(../images/main-mid.webp) center no-repeat;
+    height: 774px;
+    background-position: left;
+  }
+}
+
+@media screen and (max-width: 523px) {
+  .header-img {
+    padding-top: 300px;
+    height: 470px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .header-img {
+    background: url(../images/main-min.webp) center no-repeat;
+    height: 383px;
+    padding-top: 0;
+  }
+}
+
+.pawn {
+  position: absolute;
+  bottom: 20px;
+  right: 240px;
+  width: 82px;
+}
+
+.horse {
+  position: absolute;
+  bottom: 0px;
+  right: 530px;
+  width: 153px;
+}
+
+@media screen and (max-width: 1600px) {
+  .pawn {
+    position: absolute;
+    right: 140px;
+  }
+
+  .horse {
+    position: absolute;
+    right: 410px;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .pawn {
+    position: absolute;
+    right: 40px;
+  }
+
+  .horse {
+    position: absolute;
+    right: 330px;
+    width: 153px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .pawn {
+    display: none;
+  }
+  .horse {
+    position: absolute;
+    right: 250px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .horse {
+    position: absolute;
+    right: 150px;
+    width: 76px;
+  }
+}

@@ -1,0 +1,167 @@
+.tournament__headline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tournament {
+  position: relative;
+}
+
+@media screen and (max-width: 425px) {
+  .tournament {
+    margin-top: -15px;
+  }
+}
+
+.tournamentSlider__block {
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 425px) {
+  .tournamentSlider__block {
+    margin-top: 10px;
+  }
+}
+
+.tournament-button-prev {
+  transform: rotate(360deg);
+}
+
+.tournament-button-next {
+  transform: rotate(180deg);
+}
+
+.tournamentSlider-pagination {
+  margin-left: 23px;
+}
+
+@media screen and (max-width: 1000px) {
+  .tournamentSlider-pagination {
+    margin-left: 0px;
+  }
+}
+
+.swiper-pagination-current {
+  font-family: "Golos Text", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #313131;
+}
+
+.swiper-pagination-total {
+  font-family: "Golos Text", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #313131;
+  opacity: 0.6;
+}
+
+.tournamentSlider__card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.tournamentCard__img {
+  position: relative;
+  height: 320px;
+  width: 320px;
+  margin: 30px;
+  overflow: hidden;
+  border-radius: 50%;
+  background-image: url(../images/stage-bg.jpg);
+}
+
+@media screen and (max-width: 1050px) {
+  .tournamentCard__img {
+    height: 244px;
+    width: 244px;
+  }
+}
+
+.tournamentCard__img > img {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 300px;
+  width: 300px;
+}
+
+@media screen and (max-width: 1050px) {
+  .tournamentCard__img > img {
+    height: 220px;
+    width: 220px;
+  }
+}
+
+.tournamentCard__description > h4 {
+  font-family: "Golos Text", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28.8px;
+  color: #313131;
+}
+
+.tournamentCard__description > p {
+  font-family: "Golos Text", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #313131;
+  opacity: 0.6;
+  margin-top: 5px;
+}
+
+.tournamentCard__description > button {
+  margin-top: 20px;
+  height: 35px;
+  width: 113px;
+  border: 1px solid #3057a2;
+  border-radius: 62px;
+  font-family: "Golos Text", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0px;
+  text-align: center;
+  background-color: #fff;
+  color: #3057a2;
+}
+
+.tournamentCard__description > button:hover {
+  color: red;
+  border: 1px solid red;
+}
+
+.tournament__navigation {
+  width: 151px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .tournament__navigation {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 5;
+    bottom: -100px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .tournament__navigation {
+    width: 130px;
+    bottom: -78px;
+  }
+}
